@@ -1,4 +1,4 @@
-FROM registry.global.ccc.srvb.can.paas.cloudcenter.corp/sdi-devops-gsc/sonar-scanner:4.5
+FROM registry.global.ccc.srvb.can.paas.cloudcenter.corp/sdi-devops-gsc/sonar-scanner:4.0.0-alpine
 
 LABEL "com.github.actions.name"="SonarQube Scan"
 LABEL "com.github.actions.description"="Scan your code with SonarQube Scanner to detect bugs, vulnerabilities and code smells in more than 25 programming languages."
