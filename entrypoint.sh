@@ -3,6 +3,8 @@
 set -e
 set -x # ESTO ESTA EN DEBUG
 
+echo ${INPUT_PROJECTKEY}  ${INPUT_PROJECTNAME}
+
 if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
 	EVENT_ACTION=$(jq -r ".action" "${GITHUB_EVENT_PATH}")
 	if [[ "${EVENT_ACTION}" != "opened" ]]; then
