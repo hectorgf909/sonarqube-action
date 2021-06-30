@@ -41,5 +41,6 @@ else
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD} \
     -Dsonar.sources=. \
+    -Dsonar.analysis.mode=publish \
     -Dsonar.sourceEncoding=UTF-8
 fi
