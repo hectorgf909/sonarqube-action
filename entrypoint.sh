@@ -40,6 +40,6 @@ else
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD} \
-    -Dsonar.sources="."
+    -Dsonar.sources=. \
     -Dsonar.sourceEncoding=UTF-8
 fi
