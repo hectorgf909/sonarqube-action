@@ -36,8 +36,10 @@ else
     -Dsonar.host.url=${INPUT_HOST} \
     -Dsonar.projectKey=${INPUT_PROJECTKEY} \
     -Dsonar.projectName=${INPUT_PROJECTNAME} \
+    -Dsonar.projectVersion=${SONAR_PROJECTVERSION} \
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD} \
+    -Dsonar.sources=${INPUT_PROJECTBASEDIR}
     -Dsonar.sourceEncoding=UTF-8
 fi
