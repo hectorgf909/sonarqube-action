@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -x
 
 if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
 	EVENT_ACTION=$(jq -r ".action" "${GITHUB_EVENT_PATH}")
