@@ -21,8 +21,8 @@ if [[ ! -f "${GITHUB_WORKSPACE}/sonar-project.properties" ]]; then
   [[ -z ${INPUT_PROJECTVERSION} ]] && SONAR_PROJECTVERSION="" || SONAR_PROJECTVERSION="${INPUT_PROJECTVERSION}"
   sonar-scanner \
     -Dsonar.host.url=${INPUT_HOST} \
-    -Dsonar.projectKey=${SONAR_PROJECTKEY} \
-    -Dsonar.projectName=${SONAR_PROJECTNAME} \
+    -Dsonar.projectKey=${INPUT_PROJECTKEY} \
+    -Dsonar.projectName=${INPUT_PROJECTNAME} \
     -Dsonar.projectVersion=${SONAR_PROJECTVERSION} \
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
