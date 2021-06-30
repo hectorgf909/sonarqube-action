@@ -35,6 +35,6 @@ else
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD}
-    -Dsonar.projectKey=${SONAR_PROJECTKEY} \
-    -Dsonar.projectName=${SONAR_PROJECTNAME} \    
+    -Dsonar.projectKey=${INPUT_PROJECTKEY} \
+    -Dsonar.projectName=${INPUT_PROJECTNAME} \    
 fi
