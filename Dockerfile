@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="green"
 
 LABEL version="0.0.2"
-LABEL repository="https://github.com/hectorgf909/sonarqube-action-1"
+LABEL repository="https://github.com/hectorgf909/sonarqube-action"
 LABEL maintainer="Héctor Gutiérrez"
 
 ENV NO_PROXY="*.paas.cloudcenter.corp,localhost,127.0.0.1,*.isban.gs.corp"
